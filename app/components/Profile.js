@@ -19,8 +19,8 @@ var Profile = React.createClass({
   },
 
   componentDidMount: function () {
-    // this.ref = new Firebase('https://github-note-taker.firebaseio.com/');
-    this.ref = new Firebase('https://github-notetaker-d54f7.firebaseio.com/');
+    this.ref = new Firebase('https://github-note-taker.firebaseio.com/');
+    // this.ref = new Firebase('https://github-notetaker-d54f7.firebaseio.com/');
     var childRef = this.ref.child(this.props.params.username);
     this.bindAsArray(childRef, 'notes');
   },

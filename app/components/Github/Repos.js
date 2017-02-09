@@ -5,15 +5,14 @@ var Repos = React.createClass({
     username: React.PropTypes.string.isRequired,
     repos: React.PropTypes.array.isRequired
   },
-
   render: function () {
+    console.log('REPOS', this.props.repos)
     return (
       <div>
         <p> REPOS </p>
-        <p> {this.props.repos} </p>
       </div>
     )
   }
-});
+})
 
 module.exports = Repos;
